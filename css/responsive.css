@@ -1,0 +1,137 @@
+@media only screen and (max-width:1750px){
+    .banner { min-height: 100vh; }
+    .banner .banner_image{height: 100vh;}
+    .banner .banner_image img { width: 100%;}
+    .banner .tab_contants li .col { top: 180px;}
+    .the_numbers { padding: 40px 80px; }
+    .recent_news .owl-nav button.owl-next { margin-right: -4vw; }
+    .recent_news .owl-nav button.owl-prev { margin-left: -4vw; }
+}
+@media only screen and (max-width:1400px){
+    .wrapper { padding: 0px 80px; }
+    .banner .tab_contants li .col { top: 180px; left: 80px; }
+    .we_are_elco .left_col { width: 49%; }
+    .we_are_elco .right_col { width: 47%; }
+    .fields_of_invesment h2 { margin-bottom: 210px; }
+    .partnership_blobal_brand { padding: 50px 0; }    
+    .elco_blogs .text_col { width: 50%; }
+    .elco_blogs .col .text_col { padding-right: 50px; }
+    .elco_blogs .img { width: 50%; }
+    .elco_blogs .col { margin-bottom: 100px; }
+    .recent_news { padding: 70px 0px; }
+    .recent_news h2 { margin-bottom: 30px; }
+    .recent_news .col .img { width: 300px; }
+    .recent_news .col .text { width: calc(100% - 300px); padding-left: 15px; }
+    footer { padding-top: 100px; }
+    footer .address { margin: 55px 0; }
+
+}
+@media only screen and (max-width:1399px){
+    p{font-size: 16px;line-height: 1.5;}
+    h2, .h2 { font-size: 40px; }
+    .banner .tab_link ul li { padding: 8px 12px; }
+    .banner .tab_contants li h2 { margin-bottom: 15px; }
+    .banner .tab_contants li p { margin-bottom: 30px; }
+    .banner .tab_contants li .col { top: 140px; left: 80px; }
+    .we_are_elco { padding: 100px 0; }
+    .the_numbers .left_col h4 { line-height: 1.5; font-size: 16px; }
+    .the_numbers .wrapper { padding: 50px; }
+    .elco_blogs { padding: 50px 0 1px; }
+    .excellence p { font-size: 20px; line-height: 1.6; margin: 25px 0; }
+    .excellence .btn { margin-bottom: 50px; }
+    .excellence img{max-width: 200px;}
+    .excellence { padding: 60px 0; }
+    .recent_news .col { padding: 10px; }
+    .recent_news .col .img,.recent_news .col .text { width: 50%; }
+    .recent_news h3 { font-size: 18px; line-height: 1.3; }
+    .recent_news h4 { font-size: 14px; line-height: 1.4; font-weight: 500; padding: 8px 0 0; }
+    .recent_news .inner { margin-bottom: 25px; }
+    footer { padding-top: 80px; }
+}
+@media only screen and (max-width:1279px){
+    .wrapper { padding: 0px 20px; }
+    header { padding: 20px 20px 0px; }
+    header.fixed { padding: 4px 20px; }
+    header .inner>ul>li>a { line-height: 48px; min-width: 115px; }
+    header .brand { top: 27px; }
+    .dropmenu_image_link { width: 960px; }
+    .dropmenu_gallery_link{width: 960px;}
+    .dropmenu_gallery_link li a span { font-size: 12px; }
+    .dropmenu_gallery_link li { height: auto;}
+    .dropmenu_gallery_link li a { height: 222px; }
+
+    .banner { min-height: 700px; }
+    .banner .banner_image{height: 700px;}
+    .banner .tab_link ul li { font-size: 16px; }
+    .we_are_elco { padding: 50px 0; }
+    .banner .tab_contants li .col { top: 140px; left: 20px; }
+    .banner .tab_contants li img{height: 100%;}
+    .invesment_slider .col { padding: 30px 35px; width: 330px; height: 224px; }
+    .partnership_blobal_brand { padding: 30px 0; }
+    .partnership_blobal_brand .inner { margin-top: 30px; }
+    .the_numbers { padding: 40px 20px; }
+    .elco_blogs .col:nth-child(2n) .text_col { padding: 0 0px 0 40px; }
+    .recent_news .inner { margin-bottom: 32px; }
+    .recent_news .btn_blue { margin: 0 auto; width: fit-content; display: block; }
+    .recent_news .owl-nav { top: calc(100% + 32px); }
+    .recent_news .owl-nav button.owl-next { margin-right: 0; }
+    .recent_news .owl-nav button.owl-prev { margin-left: 0; }
+    .the_numbers .wrapper { padding: 50px 30px; }
+    footer { padding-top: 50px; }
+    footer .logo img{max-width: 80px;}
+    footer ul { margin-top: 40px; }
+    footer ul li:not(:last-child) { margin-right: 0px; }
+    footer ul li a { font-size: 14px; }
+
+}
+.banner .tab_contants li:first-child,
+.banner .tab_link ul li:first-child{display: none;}
+@media only screen and (max-width:1023px){
+    h1,.h1 { font-size: 60px; }
+    
+    header.fixed { height: 56px; }
+    header .inner { display: none; }
+    .banner_image{display: none !important;}
+    .banner .tab_contants li h1 { position: absolute; top: 146px; left: 0; right: 0; margin: auto; width: fit-content; font-family: var(--sangBleu-kingdom);  }
+    .banner .tab_contants li:first-child,
+    .banner .tab_link ul li:first-child{display:block;}
+    .banner .tab_link { padding: 0; }
+    .banner .tab_link ul{position: relative;height: 64px;}
+    .banner .tab_link ul li{position: absolute;left: 0;top: 0;width:100%;height: 64px;text-align: center;line-height: 64px;opacity: 0;pointer-events: none;padding: 0 48px;font-size: 18px;}
+    .banner .tab_link ul li br{display: none;}
+    .banner .tab_link ul li.active{opacity: 1;pointer-events: all;}
+    .banner .tab_link ul li.active::after{display: none;}
+    .banner .next_prev{z-index: 3;position: absolute;bottom:8px;width: 100%;height: 48px;pointer-events: none;}
+    .banner .next_prev span{width: 48px;height: 48px;display: flex;justify-content: center;align-items: center;cursor: pointer;transition: 0.4s ease all;pointer-events: all;}
+    .banner .next_prev span img{transform: scale(1);transform-origin: center;transition: 0.4s ease all;filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7500%) hue-rotate(233deg) brightness(100%) contrast(102%);}
+    .banner .next_prev span.prev img{transform: scale(-1);}
+    .banner .next_prev span:hover img{    transform: translateX(5px);}
+    .banner .next_prev span.prev:hover img{transform: translateX(-5px) scale(-1);}
+    .banner .next_prev span:hover{background-color: rgba(14, 41, 97, 1);}
+    .fields_of_invesment h2 { font-size: 34px; }
+    .the_numbers .left_col { width: 100%; }
+    .the_numbers .right_col { width: 350px; margin-top: 20px; }
+    .elco_blogs h2 { font-size: 30px; margin-bottom: 20px; }
+    
+}
+@media only screen and (max-width:767px){
+    h1, .h1 { font-size: 32px; }
+    h2, .h2 { font-size: 32px; line-height: 47px; }
+    p { line-height: 24px; }
+    .wrapper { padding: 0px 16px; }
+    .banner .tab_contants li h1 { top: 152px; }
+    .banner { min-height: 100vh; }
+    .we_are_elco { padding: 16px 0 88px; }
+    .we_are_elco h2{margin-bottom: 24px;}
+    .we_are_elco .right_col{ width: 100%;order: 1;}
+    .we_are_elco .left_col { width: 100%;order: 2;}
+    .we_are_elco p{font-family: var(--HelveticaNowVar);margin-bottom: 20px;}
+    .we_are_elco .btn_blue { margin-top: 12px; }
+    .fields_of_invesment h2 { font-size: 24px; line-height: 40px; max-width: 250px; margin: 0 auto 160px; }
+    .fields_of_invesment { min-height: 150px; padding-top: 56px; }
+    .fields_of_invesment h3 { font-size: 16px; line-height: 40px; margin-bottom: 10px; }
+    .invesment_slider .col { padding: 30px 35px; width: 312px; height: 198px; }
+
+
+
+}
