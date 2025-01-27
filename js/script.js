@@ -16,6 +16,38 @@ jQuery(window).scroll(function(){
 
 jQuery(document).ready(function(){
 
+  // mobile menu 
+  if(jQuery(window).width() < 1023){
+
+    jQuery('.hambarger').click(function(){
+      jQuery(this).toggleClass('active');
+      jQuery('header .inner').toggleClass('open');
+    });
+
+
+
+
+
+    jQuery('header .inner>ul>li.drop>a').after('<span class="arrow"></span>');
+
+    jQuery('.arrow').click(function () {
+      var parentLi = jQuery(this).parent('li');
+    
+      if (parentLi.hasClass('active')) {
+        parentLi.removeClass('active');
+        parentLi.find('.dropmenu_image_link,.dropmenu_gallery_link').slideUp();
+      } else {
+        jQuery('header .inner>ul>li').removeClass('active');
+        jQuery('.dropmenu_image_link,.dropmenu_gallery_link').slideUp();
+    
+        parentLi.addClass('active');
+        parentLi.find('.dropmenu_image_link,.dropmenu_gallery_link').slideDown();
+      }
+    });
+
+  }
+
+
     // for banner tab start //
     if(jQuery(window).width() > 1023){
       jQuery('.banner .tab_link ul li').hover(function(){
@@ -75,67 +107,78 @@ jQuery(document).ready(function(){
     
     // for banner tab end //
 
-
-
-// Initialize the Owl Carousel
-var invesment_slider = jQuery(".invesment_slider.owl-carousel");
-invesment_slider.owlCarousel({
-  items: 3,
-  margin: 8,
-  loop: false, // Keep loop false for the disabling logic to work
-  autoWidth: true,
-  nav: false, // Disable default navigation buttons as we are using custom ones
-});
-
-jQuery('.fields_of_invesment .next').on('click', function () {
-  invesment_slider.trigger('next.owl.carousel');
-  updateNavState(); 
-});
-
-jQuery('.fields_of_invesment .prev').on('click', function () {
-  invesment_slider.trigger('prev.owl.carousel');
-  updateNavState(); 
-});
-
-function updateNavState() {
-  var carousel = invesment_slider.data('owl.carousel');
-  if (carousel.current() === 0) {
-    jQuery('.fields_of_invesment .prev').addClass('disabled'); // Add a 'disabled' class
-  } else {
-    jQuery('.fields_of_invesment .prev').removeClass('disabled');
-  }
-
-  if (carousel.current() >= carousel.maximum()) {
-    jQuery('.fields_of_invesment .next').addClass('disabled'); // Add a 'disabled' class
-  } else {
-    jQuery('.fields_of_invesment .next').removeClass('disabled');
-  }
-}
-updateNavState();
-// Initialize the Owl Carousel end
-
 // partnership_blobal_brand 
-var partnership_blobal_brand = jQuery(".partnership_blobal_brand .owl-carousel");
-partnership_blobal_brand.owlCarousel({
-  items: 1,
-  margin:78,
-  loop: false,
-  autoWidth: true,
-  nav: false, 
+setTimeout(function(){
+  var partnership_blobal_brand = jQuery(".partnership_blobal_brand .owl-carousel");
+  partnership_blobal_brand.owlCarousel({
+    items: 9,
+    margin:0,
+    ltr :true,
+    loop: false,
+    autoWidth: false,
+    nav: false,
     responsive : {
-      // breakpoint from 0 up
       0 : {
-        margin:20,
+        items: 2,
       },
-      // breakpoint from 480 up
       768 : {
-        margin:30,
+        items: 5,
       },
       1024 : {
-        margin:50,
+        items: 6,
+      },
+      1280 : {
+        items: 7,
+      },
+      1400 : {
+        items: 9,
       }
+
+  } 
+  });
+
+},50);
+
+if(jQuery('.invesment_slider').length > 0){
+  // Initialize the Owl Carousel
+  var invesment_slider = jQuery(".invesment_slider.owl-carousel");
+  invesment_slider.owlCarousel({
+    items: 3,
+    margin: 0,
+    loop: false, // Keep loop false for the disabling logic to work
+    autoWidth: true,
+    nav: false, // Disable default navigation buttons as we are using custom ones
+    
+  });
+
+  jQuery('.fields_of_invesment .next').on('click', function () {
+    invesment_slider.trigger('next.owl.carousel');
+    updateNavState(); 
+  });
+
+  jQuery('.fields_of_invesment .prev').on('click', function () {
+    invesment_slider.trigger('prev.owl.carousel');
+    updateNavState(); 
+  });
+
+  function updateNavState() {
+    var carousel = invesment_slider.data('owl.carousel');
+    if (carousel.current() === 0) {
+      jQuery('.fields_of_invesment .prev').addClass('disabled'); // Add a 'disabled' class
+    } else {
+      jQuery('.fields_of_invesment .prev').removeClass('disabled');
+    }
+
+    if (carousel.current() >= carousel.maximum()) {
+      jQuery('.fields_of_invesment .next').addClass('disabled'); // Add a 'disabled' class
+    } else {
+      jQuery('.fields_of_invesment .next').removeClass('disabled');
+    }
   }
-});
+  updateNavState();
+  // Initialize the Owl Carousel end
+}
+
 // partnership_blobal_brand end
 if(jQuery('.recent_news').length > 0){
   var recent_news = jQuery(".recent_news .owl-carousel");
@@ -148,23 +191,23 @@ if(jQuery('.recent_news').length > 0){
       '<img src="images/nav_right.svg" alt="Previous">',
       '<img src="images/nav_right.svg" alt="Next">'
     ],
-    responsive : {
-      0 : {
-        margin:0,
-        items: 1,
-      },
-      768 : {
-        margin:15,
-        items: 1,
-      },
-      1024 : {
-        margin:20,
-        items: 2,
-      },
-      1280 : {
-        margin:32,
+        responsive : {
+          0 : {
+            margin:0,
+            items: 1,
+          },
+          768 : {
+            margin:15,
+            items: 1,
+          },
+          1024 : {
+            margin:20,
+            items: 2,
+          },
+          1280 : {
+            margin:32,
+          }
       }
-  }
   });
 }
 
