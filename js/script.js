@@ -6,6 +6,26 @@ $(window).load(function(){
     });
 });
 
+jQuery( '.foundation_futures .inner a,.dropmenu_gallery_link li a' ).on( 'click', function(){
+  var href = jQuery(this).prop("hash").substr(1);
+  
+  jQuery( 'html, body' ).animate({
+    scrollTop: jQuery('.'+href).offset().top - 50
+  },1000);
+});
+
+jQuery(window).load(function(){
+  var _has =  window.location.hash.slice(1);
+  if(_has){
+    jQuery( 'html, body' ).animate({
+      scrollTop: jQuery('.'+_has).offset().top - 50
+    },1000);        
+  }
+});
+
+
+
+
 jQuery(window).scroll(function(){
   var sticky = jQuery('header'),
       scroll = jQuery(window).scrollTop();
@@ -24,9 +44,7 @@ jQuery(document).ready(function(){
       jQuery('header .inner').toggleClass('open');
     });
 
-
-
-
+    
 
     jQuery('header .inner>ul>li.drop>a').after('<span class="arrow"></span>');
 
@@ -43,6 +61,12 @@ jQuery(document).ready(function(){
         parentLi.addClass('active');
         parentLi.find('.dropmenu_image_link,.dropmenu_gallery_link').slideDown();
       }
+    });
+
+    jQuery('.dropmenu_gallery_link li a,header .inner>ul>li>a,.dropmenu_image_link ul li a').click(function(){
+      jQuery('.hambarger').removeClass('active');
+      jQuery('header .inner').removeClass('open');
+      
     });
 
   }
@@ -139,8 +163,8 @@ setTimeout(function(){
 
 },50);
 
+// invesment_slider 
 if(jQuery('.invesment_slider').length > 0){
-  // Initialize the Owl Carousel
   var invesment_slider = jQuery(".invesment_slider.owl-carousel");
   invesment_slider.owlCarousel({
     items: 3,
@@ -178,6 +202,7 @@ if(jQuery('.invesment_slider').length > 0){
   updateNavState();
   // Initialize the Owl Carousel end
 }
+// invesment_slider end
 
 // partnership_blobal_brand end
 if(jQuery('.recent_news').length > 0){
@@ -211,6 +236,35 @@ if(jQuery('.recent_news').length > 0){
   });
 }
 
+// popup start
+jQuery('.key_activities .col').click(function(){
+    jQuery('.activities_popup').addClass('open');
+});
+jQuery('.leadership .col').click(function(){
+    jQuery('.leadership_popup').addClass('open');
+});
+jQuery('.popup .close,.popup .bg').click(function(){
+  jQuery('.activities_popup').removeClass('open');
+  jQuery('.leadership_popup').removeClass('open');
+});
+
+
+if(jQuery('.activities_popup').length > 0){
+  var recent_news = jQuery(".activities_popup .owl-carousel");
+  recent_news.owlCarousel({
+    items: 1,
+    margin:0,
+    loop: true,
+    nav: true,
+    dots:false, 
+    autoplay:true,
+    navText: [
+      '<img src="images/nav_right.svg" alt="Previous">',
+      '<img src="images/nav_right.svg" alt="Next">'
+    ],
+  });
+}
+// popup end
 
 
 

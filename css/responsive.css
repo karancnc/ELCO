@@ -6,6 +6,10 @@
     .the_numbers { padding: 40px 80px; }
     .recent_news .owl-nav button.owl-next { margin-right: -4vw; }
     .recent_news .owl-nav button.owl-prev { margin-left: -4vw; }
+
+  
+
+
 }
 @media only screen and (max-width:1400px){
     .wrapper { padding: 0px 80px; }
@@ -47,6 +51,22 @@
     .recent_news h4 { font-size: 14px; line-height: 1.4; font-weight: 500; padding: 8px 0 0; }
     .recent_news .inner { margin-bottom: 25px; }
     footer { padding-top: 80px; }
+
+      /* portfolio page */
+    .foundation_futures .inner .col { height: 240px; }
+    .foundation_futures .inner .col5 { height: 488px; }
+    .foundation_futures { padding: 100px 0px 120px; }
+    .foundation_futures .bg { background-position: bottom 35px center; }
+    .portfolio_sec { padding: 50px 0px 100px; }
+    .portfolio_sec .col img { margin-bottom: 20px; }
+    .portfolio_sec .col p { margin-bottom: 30px; }
+    .portfolio_sec .text { right: 70px; width: 140px; padding: 48px 8px 8px; }
+    .portfolio_sec .text .traded span { font-size: 36px; line-height: 42px; }
+    .portfolio_sec .text .traded h6 { font-size: 14px; }
+    .portfolio_sec .text .public { font-size: 16px; line-height: 22px; }
+    .portfolio_sec .col img { max-height: 50px; }
+
+
 }
 @media only screen and (max-width:1279px){
     .wrapper { padding: 0px 20px; }
@@ -83,6 +103,12 @@
     footer ul li:not(:last-child) { margin-right: 0px; }
     footer ul li a { font-size: 14px; }
 
+    /* portfolio page */
+    .inner_banner { height: 80vh; }
+    .inner_banner .col { width: 659px; }
+    .inner_banner .col p { font-size: 16px; line-height: 26px; }
+
+
 }
 .banner .tab_contants li:first-child,
 .banner .tab_link ul li:first-child{display: none;}
@@ -105,7 +131,7 @@
     header.fixed .hambarger span::after,
     header.fixed .hambarger span::before{background-color: #2059CE;}
 
-    header .inner { display: block; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: #0E1931; z-index: 9;overflow: auto;transform: translateY(-100%);transition: 0.5s ease all;}
+    header .inner { display: block; position: fixed; top: 0; left: 0; width: 100%; height:100vh; background-color: #0E1931; z-index: 9;overflow: auto;transform: translateY(-100%);transition: 0.5s ease all;}
     header .inner.open {transform: translateY(0);}
     
     .dropmenu_image_link ,
@@ -133,9 +159,6 @@
     header .inner .mobile_logo{display:block;margin: 0 auto;margin-top: 16px;margin-bottom: 31px;}
     
     
-    
-
-
     h1,.h1 { font-size: 60px; }
     header.fixed { height: 56px; }
     .banner_image{display: none !important;}
@@ -159,7 +182,22 @@
     .the_numbers .left_col { width: 100%; }
     .the_numbers .right_col { width: 350px; margin-top: 20px; }
     .elco_blogs h2 { font-size: 30px; margin-bottom: 20px; }
-    
+
+
+    /* portfolio page */
+    .foundation_futures { padding: 70px 0px 70px; }
+    .foundation_futures h2 { font-size: 32px; line-height: 44px; margin-bottom: 70px; }
+    .foundation_futures .inner { display: flex ; gap: 8px; flex-wrap: wrap; }
+    .foundation_futures .inner .col{width:calc(33.33% - 6px);}
+    .foundation_futures .inner .col5 { height: 240px; }
+    .portfolio_sec .colin { padding: 56px 0 56px 30px; }
+    .portfolio_sec .col { padding: 20px; max-width: 490px; }
+    .portfolio_sec .text { right: 30px; }
+    .portfolio_sec .wrap { margin-bottom: 30px; }
+
+
+
+
 }
 .banner .tab_contants li .bg{display: none;}
 @media only screen and (max-width:767px){
@@ -254,6 +292,41 @@
     footer .bottom_footer .wrapper>p{width: 100%;}
     footer .michal{display: block;text-align: center;padding:33px 0px 57px;}
     footer .michal h4,footer .michal p,footer .michal p a{font-size: 14px;line-height: 24px;color: var(--ebony);}
+    
+    /* portfolio page */
+    .inner_banner { height: 100vh; }
+    .inner_banner .col { width: 100%; max-width: calc(100% - 40px);padding: 16px 24px;}
+    .inner_banner .col h1 { font-size: 24px; line-height: 32px;margin-bottom: 8px;}
+    .inner_banner .col p { font-size: 14px; line-height: 20px; }
+    .foundation_futures { padding: 60px 24px 56px; }
+    .foundation_futures { padding: 60px 24px 56px; }
+    .foundation_futures .wrapper{padding: 0px;}
+    .foundation_futures h2 { font-size: 24px; line-height: 32px; margin-bottom: 35px; }
+    .foundation_futures .inner { gap: 0; }
+    .foundation_futures .inner .col { width: 100%; margin-bottom: 8px;height: 64px;}
+    .foundation_futures .inner .col:last-child{margin-bottom: 0;}
+    .foundation_futures .inner .col span { top: 16px; padding: 0 16px; font-size: 16px; }
+    .foundation_futures .inner .col:hover span { padding:0 20px; }
+    .foundation_futures .bg{display: none;}
+    .portfolio_sec { padding: 8px 0 100px; }
+    .portfolio_sec .wrapper { padding: 0px 24px;}
+    .portfolio_sec h2 { padding: 16px 0; }
+    .portfolio_sec .wrap {padding: 0px; }
+    .portfolio_sec .colin { padding: 0; }
+    .portfolio_sec .bg{position: relative;height: 168px;margin-bottom: 48px;}
+    .portfolio_sec .col { padding: 16px 32px; max-width: 100%; background-color: #0E2961; backdrop-filter: blur(0px); }
+    .portfolio_sec .text { right: 0; width: 100%; height: 48px; bottom: -48px; top: auto;padding: 8px;display: flex;justify-content: space-between;align-items: center; background: linear-gradient(-10deg, #1D4FB7 0%, #0E2961 220%); }
+    .portfolio_sec .text>img { top: 16px; left: auto; right: -10px; width: 60px; transform: rotate(90deg); }
+    .portfolio_sec .text .public { font-size: 14px; line-height: 16px; padding: 0 0 0 8px; }
+    .portfolio_sec .text .traded { padding: 0 8px 0 0; position: relative;z-index: 1;}
+    .portfolio_sec .text .traded span { line-height: 32px; }
+    .portfolio_sec .text .traded { padding: 0 8px 0 0; display: flex ; align-items: baseline; margin-top: 5px; }
+    .portfolio_sec .text .traded h6{margin-left: 5px;}
+    .portfolio_sec .col img { max-height: 49px; margin-bottom: 16px; }
+    .portfolio_sec .col p { margin-bottom: 16px; font-size: 14px; }
+    .portfolio_sec .wrap { margin-bottom: 24px; }
+
+
 
 }
 
