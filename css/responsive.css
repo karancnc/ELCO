@@ -11,7 +11,8 @@
 
 
 }
-@media only screen and (max-width:1400px){
+@media only screen and (max-width:1599px){
+    h3, .h3 { font-size: 22px; line-height: 30px; }
     .wrapper { padding: 0px 80px; }
     .banner .tab_contants li .col { top: 180px; left: 80px; }
     .we_are_elco .left_col { width: 49%; }
@@ -27,12 +28,40 @@
     .recent_news .col .img { width: 300px; }
     .recent_news .col .text { width: calc(100% - 300px); padding-left: 15px; }
     footer { padding-top: 100px; }
-    footer .address { margin: 55px 0; }
+    footer .address { margin: 55px 0 0; }
+    /* portfolio  details */
+    .details_banner .col { left: 80px; }
+    .performance_metrics .wrapper { padding: 70px 80px 30px; }
+    .performance_metrics .inner { max-width: 910px; }
+    .performance_metrics .col { margin-bottom: 20px; }
+    .performance_metrics h2 { margin-bottom: 35px; }
+    .core_benefits .col h3 { font-size: 20px; line-height: 22px; margin-bottom: 10px; }
+    .core_benefits .col p { font-size: 16px; line-height: 28px; }
+    .key_activities .text { padding: 20px 20px 48px; }
+    .key_activities { padding: 150px 0px; }
+    .leadership .col { width: 32%; margin-right: 24px; margin-bottom: 60px; }
+    .leadership .col:nth-child(3n){margin-right: 0;}
+
+    .popup .inner { width: 1200px; height: 550px; }
+    .popup .inner>div { height: 550px; }
+    .activities_popup .left_col { padding: 70px 50px 80px 60px; }
+    .activities_popup .owl-stage-outer,
+    .activities_popup .owl-stage,
+    .activities_popup .owl-item{height: 100%;}
+    .leadership_popup .left_col { padding: 70px 70px 60px 80px; }
+
+    .notable_projects .wrapper { max-width: calc(100% - 80px); margin-left: 80px; padding: 0; }
+    .notable_projects .owl-nav .owl-prev { margin-left: -80px; }
+    .notable_projects .colin { width: 1200px; height: 570px; }
+    .key_activities_four.key_activities { padding-bottom: 150px; }
+
+
 
 }
 @media only screen and (max-width:1399px){
     p{font-size: 16px;line-height: 1.5;}
     h2, .h2 { font-size: 40px; }
+    h3, .h3 { font-size: 20px; line-height: 30px; }
     .banner .tab_link ul li { padding: 8px 12px; }
     .banner .tab_contants li h2 { margin-bottom: 15px; }
     .banner .tab_contants li p { margin-bottom: 30px; }
@@ -67,6 +96,24 @@
     .portfolio_sec .col img { max-height: 50px; }
 
 
+    /* portfolio details page  */
+    .details_banner .col { top: 170px; }
+    .details_banner .col>img { margin-bottom: 20px; }
+    .details_banner .col h1 { font-size: 32px; line-height: 42px; margin-bottom: 30px; }
+    .details_banner .col p { font-size: 16px; line-height: 28px; }
+    .performance_metrics .inner { max-width: 800px; }
+    .performance_metrics p { line-height: 22px; font-size: 16px; }
+    .performance_metrics h3 { line-height: 46px; font-size: 46px; }
+    .core_benefits { padding: 80px 0 80px; }
+    .key_activities { padding: 80px 0px; }
+    .key_activities .col { height: 470px; }
+    .key_activities .text p { font-size: 16px; line-height: 28px; }
+    .leadership .col { width: 31.9%; height: 450px; margin-bottom: 40px; }
+    .leadership .text p { font-size: 14px; line-height: 24px; min-height: 48px; }
+    .notable_projects .colin { width: 1100px; height: 500px; }
+
+
+
 }
 @media only screen and (max-width:1279px){
     .wrapper { padding: 0px 20px; }
@@ -99,14 +146,37 @@
     .the_numbers .wrapper { padding: 50px 30px; }
     footer { padding-top: 50px; }
     footer .logo img{max-width: 80px;}
-    footer ul { margin-top: 40px; }
-    footer ul li:not(:last-child) { margin-right: 0px; }
-    footer ul li a { font-size: 14px; }
+    footer ul.link { margin-top: 40px; }
+    footer ul.link li:not(:last-child) { margin-right: 0px; }
+    footer ul.link li a { font-size: 14px; }
 
     /* portfolio page */
     .inner_banner { height: 80vh; }
     .inner_banner .col { width: 659px; }
     .inner_banner .col p { font-size: 16px; line-height: 26px; }
+     /* portfolio details page  */
+     .details_banner { height: 85vh; }
+    .details_banner .col { top: 170px; left: 20px; }
+    .performance_metrics .wrapper { padding: 60px 20px 30px; }
+    .performance_metrics .col { margin-bottom: 10px; }
+    .performance_metrics::after { background-size: cover; }
+    .elco_blogs_inner .col { margin-bottom: 50px; }
+    .leadership .col { width: 31.7%; height: 390px; margin-bottom: 40px; }
+    .leadership { padding: 80px 0px 60px; }
+    .leadership h2 { margin-bottom: 30px; }
+    .popup .inner { width: 900px; height: 420px; }
+    .popup .inner>div { height: 420px; }
+    .activities_popup h2 { font-size: 28px; line-height: 30px; margin-bottom: 30px; }
+    .activities_popup h2::after { bottom: -10px; width: 48px; }
+    .activities_popup p,.leadership_popup p{ font-size: 14px; line-height: 24px; }
+    .activities_popup p:not(:last-child),
+    .leadership_popup p:not(:last-child) { margin-bottom: 20px; }
+    .leadership_popup .left_col { padding: 70px 50px 60px 70px; }
+    .key_activities_four.key_activities { padding-bottom: 80px; }
+    .notable_projects { padding: 80px 0; }
+    .notable_projects .wrapper { max-width: calc(100% - 20px); margin-left:20px; padding: 0; }
+    .notable_projects .owl-nav .owl-prev { margin-left: -20px; }
+    .notable_projects .colin { width: 900px; height: 450px; }
 
 
 }
@@ -195,6 +265,16 @@
     .portfolio_sec .text { right: 30px; }
     .portfolio_sec .wrap { margin-bottom: 30px; }
 
+    /* portfolio details page  */
+    .details_banner { height: 80vh; }
+    .core_benefits .col { width: 50%; padding-right: 16px; margin-bottom: 15px;}
+    .key_activities .col { width: calc(50% - 5.3px); }
+    .leadership .col { width: calc(50% - 8px); height:400px; margin-bottom: 20px; margin-right: 16px; }
+    .leadership .col:nth-child(3n) { margin-right: 16px; }
+    .leadership .col:nth-child(2n) { margin-right: 0; }
+    .popup .inner { width: calc(100% - 40px); height: 420px; }
+    .notable_projects .colin { width: 700px; height: 420px; }
+
 
 
 
@@ -203,6 +283,7 @@
 @media only screen and (max-width:767px){
     h1, .h1 { font-size: 32px; }
     h2, .h2 { font-size: 24px; line-height: 32px; }
+    h3, .h3 { font-size: 20px; line-height:24px; }
     p { line-height:24px;}
     a { font-size: 14px; line-height: 30px; }
     .wrapper { padding: 0px 16px; }
@@ -227,6 +308,7 @@
     .fields_of_invesment h3 { font-size: 16px; line-height: 40px; margin-bottom: 10px; }
     .fields_of_invesment h3::after, .fields_of_invesment h3::before { width: 50px; }
     .fields_of_invesment .next_prev { padding: 16px 8px; }
+    .fields_of_invesment .next_prev .btn_blue{display: block;}
     .invesment_slider .col { padding: 30px 8px 20px; width: 312px; height: 198px;}
     .invesment_slider .col .traded{max-width: 100%;}
     .invesment_slider .col .public { font-size: 14px; font-family: var(--HelveticaNowVar); }
@@ -277,21 +359,38 @@
     footer { padding-top:40px; border-color: #8B8F96; }
     footer .logo img { max-width: 120px; }
     footer .wrapper{padding: 0 24.5px;}
-    footer ul{ margin-top: 36px;justify-content: space-between !important;}
-    footer ul li{width:calc(50% - 12px);text-align: left;}
-    footer ul li a{font-size: 14px; padding: 9px 0; line-height: 22px; display: block;}
+    footer ul.link{ margin-top: 36px;justify-content: space-between !important;}
+    footer ul.link li{width:calc(50% - 12px);text-align: left;}
+    footer ul.link li a{font-size: 14px; padding: 9px 0; line-height: 22px; display: block;}
     footer .address { margin: 48px 0 0;padding: 24px 0;border-top: 1px solid #8B8F96;border-bottom: 1px solid #8B8F96;}
     footer .address a, footer .address em, footer .address p { font-size: 14px; line-height: 24px; }
-    footer .address a { display: block; width: 100%; margin-bottom: 8px; max-width: 280px; }
+    footer .address a { display: block; width: 100%; max-width: 280px; }
     footer .address a+em{display: none;}
+    footer .address li:first-child{ margin-right: 0px;width: 100%;margin-bottom: 14px; }
+    footer .address li:first-child::after{display: none;}
+    footer .address li:not(:last-child)::after { right: -9px; top: -8px; }
+
+    footer .bottom_footer{padding: 8px 0;}
     footer .bottom_footer .left_col{max-width: 250px;margin: 0 auto;}
     footer .bottom_footer .left_col p{width: 100%;margin-bottom: 8px;}
     footer .bottom_footer .left_col *:not(p){line-height: 24px !important;}
     footer .bottom_footer .left_col p+em,footer .bottom_footer .left_col p+em+a+em+a+em{display: none;}
     footer .bottom_footer .left_col { max-width: 270px; justify-content: center; margin-bottom: 8px;}
     footer .bottom_footer .wrapper>p{width: 100%;}
-    footer .michal{display: block;text-align: center;padding:33px 0px 57px;}
+    footer .michal{display: block;text-align: center;padding:33px 0px 57px;margin-bottom: 0;}
     footer .michal h4,footer .michal p,footer .michal p a{font-size: 14px;line-height: 24px;color: var(--ebony);}
+    footer .michal li:first-child{font-weight: 600;}
+    footer .michal li:not(:last-child) { margin-right: 0; }
+    footer .michal li:not(:last-child)::after{display: none;}
+    footer .bottom_footer .right_col { width: 100%; justify-content: center; }
+    footer .bottom_footer ul.left_col li:first-child{width: 100%;}
+    footer .bottom_footer ul.left_col li:first-child,
+    footer .bottom_footer ul.left_col li:nth-child(3){margin-right: 0;}
+    footer .bottom_footer ul.left_col li:first-child::after,
+    footer .bottom_footer ul.left_col li:nth-child(3)::after{display: none;}
+    footer .bottom_footer ul.left_col li:last-child{width: 100%;margin-top: 4px;}
+    footer .bottom_footer ul.left_col li:not(:last-child)::after { top: -7px; }
+
     
     /* portfolio page */
     .inner_banner { height: 100vh; }
@@ -325,6 +424,83 @@
     .portfolio_sec .col img { max-height: 49px; margin-bottom: 16px; }
     .portfolio_sec .col p { margin-bottom: 16px; font-size: 14px; }
     .portfolio_sec .wrap { margin-bottom: 24px; }
+
+    /* portfolio details page  */
+    .details_banner { height: 100vh; }
+    .details_banner .col { top: 170px; left: 20px; width: calc(100% - 40px); }
+    .details_banner .col { top: 195px; left: 20px; width: calc(100% - 40px); padding: 24px 16px; }
+    .details_banner .col h1 { font-size: 24px; line-height: 32px; margin-bottom: 16px; text-align: center; }
+    .details_banner .col>img { margin-bottom: 40px; max-height: 42px; margin: 0 auto; margin-bottom: 16px; }
+    .details_banner .col p { font-size: 14px; line-height: 20px; text-align: center; }
+    .performance_metrics h2 { font-size: 24px; line-height: 32px; margin-bottom: 24px;text-align: center;}
+    .performance_metrics .wrapper { padding: 48px 24px 267px; }
+    .performance_metrics .col { width: 100%; margin-bottom: 0px; }
+    .performance_metrics h3 { line-height: 40px; font-size: 44px; }
+    .performance_metrics h3 em, .performance_metrics h3 strong { margin: 0px 5px; }
+    .performance_metrics p { line-height: 20px; font-size: 14px; }
+
+    .elco_blogs .col { margin-bottom: 72px; }
+    .core_benefits { padding: 48px 24px 24px; }
+    .core_benefits .wrapper{padding: 0px;}
+    .core_benefits h2 { font-size: 24px; line-height: 32px; margin-bottom: 24px; }
+    .core_benefits .col { width: 100%; padding-right: 0; margin-bottom: 24px; display: flex ; flex-wrap: wrap; align-items: center; }
+    .core_benefits .col h3 { font-size: 18px; line-height: 24px; margin-bottom: 0;width: calc(100% - 56px);padding-left: 8px;}
+    .core_benefits .col img { margin-bottom: 0; }
+    .core_benefits .col p {line-height: 24px; margin-top: 8px; }
+    .key_activities { padding: 56px 24px; }
+    .key_activities h2 { font-size: 24px; line-height: 32px; margin-bottom: 48px; }
+    .key_activities .inner { gap: 0; }
+    .key_activities .col { width: 100%;    height: 376px;margin-bottom: 24px;}
+    
+    .key_activities .wrapper{padding: 0px;}
+    .key_activities .text { padding: 16px 48px 48px 24px; transform: translateY(0px);}
+    .key_activities .text span img { transform: rotate(0deg); }
+    .key_activities .text p { line-height: 24px; }
+    .leadership { padding: 48px 24px; }
+    .leadership .wrapper { padding:0; }
+    .leadership h2 { font-size: 24px; line-height: 32px; margin-bottom: 48px; }
+    .leadership .col { width: 100%; height: 396px; margin-bottom: 20px; margin-right: 0; }
+    .leadership .text p { font-size: 18px; line-height: 32px; min-height:32px; }
+    .leadership .col:nth-child(3n) { margin-right: 0px; }
+    .leadership .text h3 { font-weight:bold; font-size: 24px; line-height: 32px; width: calc(100% - 24px); }
+    .popup .inner { height: fit-content; flex-direction: column-reverse; }
+    .popup .inner>div { width: 100%;  }
+    .popup .inner>div.right_col {height: 248px;}
+    .popup .inner>div.left_col { height: 54vh; padding: 24px 24px 48px; }
+    .popup .close { width: 32px; height: 32px; z-index: 2; }
+    .popup .close img{width: 8px;}
+    .popup .owl-nav button { width: 32px; height: 32px; }
+    .popup .owl-nav button img{width: 15px;}
+    .leadership_popup h2 { font-size: 18px; line-height: 24px;width: calc(100% - 24px); }
+    .notable_projects { padding: 64px 0 56px; }
+    .notable_projects .wrapper { max-width: calc(100% - 24px); margin-left: 24px; padding: 0; }
+    .notable_projects .owl-nav button { width: 32px; height: 32px; }
+    .notable_projects .owl-nav button img{width: 15px;}
+    .notable_projects .colin { width: 312px; height: auto; }
+    .notable_projects .colin img{height:232px;}
+    .notable_projects .colin .col{height: 337px;width: 100%;max-width: 100%;position: relative;top: 0;left: 0;background-color: var(--ebony);}
+    .notable_projects .owl-nav .owl-prev { margin-left: 8px; }
+    .notable_projects .owl-nav .owl-next { margin-right: 32px;}
+    .notable_projects .owl-nav { top: 108px; }
+    .notable_projects h3 { margin-bottom: 33px; font-size: 18px; line-height: 24px; }
+    .notable_projects h3::after { bottom: -15px; width: 100%; }
+    .notable_projects h2 { font-size: 24px; line-height: 32px; margin-bottom: 32px; }
+    .key_activities_four.key_activities .col { height: 376px; width: 100%; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

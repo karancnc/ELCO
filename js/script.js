@@ -1,4 +1,4 @@
-/* Window Load functions */
+var $ = jQuery.noConflict();
 
 $(window).load(function(){
     setTimeout(function(){
@@ -250,8 +250,8 @@ jQuery('.popup .close,.popup .bg').click(function(){
 
 
 if(jQuery('.activities_popup').length > 0){
-  var recent_news = jQuery(".activities_popup .owl-carousel");
-  recent_news.owlCarousel({
+  var activities_popup = jQuery(".activities_popup .owl-carousel");
+  activities_popup.owlCarousel({
     items: 1,
     margin:0,
     loop: true,
@@ -264,9 +264,31 @@ if(jQuery('.activities_popup').length > 0){
     ],
   });
 }
-// popup end
-
-
+// notable_projects slider start
+if(jQuery('.notable_projects').length > 0){
+  var notable_projects = jQuery(".notable_projects .owl-carousel");
+  notable_projects.owlCarousel({
+    items: 1,
+    margin:16,
+    loop: true,
+    nav: true,
+    autoWidth:true,
+    dots:false, 
+    navText: [
+      '<img src="images/nav_right.svg" alt="Previous">',
+      '<img src="images/nav_right.svg" alt="Next">'
+    ],
+      responsive : {
+        0 : {
+          margin:8,
+        },
+        768 : {
+          margin:16,
+        },
+    }
+  });
+}
+// notable_projects slider end
 
 
 
