@@ -243,10 +243,29 @@ jQuery('.key_activities .col').click(function(){
 jQuery('.leadership .col').click(function(){
     jQuery('.leadership_popup').addClass('open');
 });
+
+jQuery('.legacy_leadership .elco_legacy').click(function(){
+  var videoSrc = jQuery(this).attr('data-src'); // Get the video URL
+        var videoID = videoSrc.split("/embed/")[1].split("?")[0]; // Extract video ID
+
+        // Create a looped video URL (autoplay + loop enabled)
+        var finalSrc = videoSrc.includes("?") 
+            ? videoSrc + "&autoplay=1&loop=1&playlist=" + videoID 
+            : videoSrc + "?autoplay=1&loop=1&playlist=" + videoID;
+
+        jQuery('.legacy_popup .iframe').attr('src', finalSrc);
+
+  jQuery('.legacy_popup').addClass('open');
+
+});
+
 jQuery('.popup .close,.popup .bg').click(function(){
   jQuery('.activities_popup').removeClass('open');
   jQuery('.leadership_popup').removeClass('open');
+  jQuery('.legacy_popup').removeClass('open');
 });
+
+
 
 
 if(jQuery('.activities_popup').length > 0){
@@ -264,13 +283,17 @@ if(jQuery('.activities_popup').length > 0){
     ],
   });
 }
+
+// popup end
+
+
 // notable_projects slider start
 if(jQuery('.notable_projects').length > 0){
   var notable_projects = jQuery(".notable_projects .owl-carousel");
   notable_projects.owlCarousel({
     items: 1,
     margin:16,
-    loop: true,
+    loop: false,
     nav: true,
     autoWidth:true,
     dots:false, 
@@ -289,8 +312,88 @@ if(jQuery('.notable_projects').length > 0){
   });
 }
 // notable_projects slider end
+// brand_text_slider start
+if(jQuery('.brand_text_slider').length > 0){
+  var brand_text_slider = jQuery(".brand_text_slider .owl-carousel");
+  brand_text_slider.owlCarousel({
+    items: 2,
+    margin:110,
+    loop: true,
+    nav: true,
+    dots:false, 
+    navText: [
+      '<img src="images/nav_right.svg" alt="Previous">',
+      '<img src="images/nav_right.svg" alt="Next">'
+    ],
+      responsive : {
+        0 : {
+          margin:0,
+          items: 1,
+        },
+        1024 : {
+          margin:50,
+          items: 2,
+        },
+        1399 : {
+          margin:110,
+        }
+    }
+  });
+}
+// brand_text_slider end
+
+// our_approach_slider start
+if(jQuery('#our_approach_slider').length > 0){
+  if(jQuery(window).width() > 768){
+    jQuery('#our_approach_slider').addClass('owl-carousel');
+    setTimeout(function(){
+      var our_approach_slider = jQuery("#our_approach_slider.owl-carousel");
+      our_approach_slider.owlCarousel({
+        items: 1,
+        margin:0,
+        loop: false,
+        nav: true,
+        dots:true, 
+        navText: [
+          '<img src="images/nav_right.svg" alt="Previous">',
+          '<img src="images/nav_right.svg" alt="Next">'
+        ],
+        touchDrag : false,
+        mouseDrag : false,
+        animateOut: 'fadeOut',
+        animateIn: 'fadeIn',
+        dotsContainer: '#our_dots',
+      });
+      jQuery('#our_dots li').click(function () {
+        our_approach_slider.trigger('to.owl.carousel', [$(this).index(), 300]);
+      });
+    },50);
+  }else{
+    
+    jQuery('#our_approach_slider .colin h3').append('<span></span><span></span>');
+
+    jQuery('#our_approach_slider .colin:first-child h3').addClass('active');
+    jQuery('#our_approach_slider .colin:first-child .bg').slideDown();
+
+    jQuery('#our_approach_slider .colin h3').click(function(){
+        var _this = jQuery(this);
+
+        if(!_this.hasClass('active')){
+          jQuery('#our_approach_slider .colin h3').removeClass('active');
+          jQuery('#our_approach_slider .bg').slideUp();
+          _this.addClass('active');
+          _this.next().slideDown();
+        }
+
+    });
 
 
+
+
+
+  }
+}
+// our_approach_slider end
 
 
 });

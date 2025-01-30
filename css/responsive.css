@@ -7,6 +7,10 @@
     .recent_news .owl-nav button.owl-next { margin-right: -4vw; }
     .recent_news .owl-nav button.owl-prev { margin-left: -4vw; }
 
+    /* about page */
+    .legacy_popup .inner { height: 90vh; }
+    .leadership_about.leadership .inner { padding: 0px 80px; }
+    .leadership_about.leadership .col { height: 600px; }
   
 
 
@@ -55,6 +59,24 @@
     .notable_projects .colin { width: 1200px; height: 570px; }
     .key_activities_four.key_activities { padding-bottom: 150px; }
 
+    /* about page */
+    .inner_banner.about_banner .col { left: 80px; }
+    .legacy_leadership .inner { padding: 50px 40px; }
+    .legacy_leadership .right_col { width: 54%; height: 395px; }
+    .legacy_leadership .left_col { width: 46%; padding-right: 40px; }
+    .legacy_man { padding: 32px 0 100px; }
+    .legacy_man .right_col img+p { font-size: 20px; line-height: 30px; margin-bottom: 20px; }
+    .legacy_man .right_col { padding: 45px 80px 40px 50px; }
+    .worldwide { padding: 70px 0 100px; }
+    .worldwide h2 { line-height: 50px; margin-bottom: 90px; font-size: 40px; }
+    .brand_text_slider { padding: 120px 80px 100px; }
+    .brand_text_slider .wrapper{padding: 0;}
+    .brand_text_slider .owl-nav button.owl-prev{ margin-left: -80px;}
+    .brand_text_slider .owl-nav button.owl-next{ margin-right: -80px; }
+    #our_approach_slider .owl-nav button.owl-prev { margin-left: -80px; }
+    #our_approach_slider .owl-nav button.owl-next { margin-right: -80px; }
+    .our_approach { padding: 24px 0 100px; }
+    .leadership_about.leadership .col:nth-child(3n) {margin-right: 24px; }
 
 
 }
@@ -112,7 +134,16 @@
     .leadership .text p { font-size: 14px; line-height: 24px; min-height: 48px; }
     .notable_projects .colin { width: 1100px; height: 500px; }
 
-
+     /* about page */   
+    .inner_banner.about_banner .col h1 { margin-bottom: 20px; }
+    .inner_banner.about_banner .col p { font-size: 16px; line-height: 30px; }
+    .legacy_leadership .right_col { height: 355px; }
+    .worldwide h2 { line-height: 50px; margin-bottom: 90px; font-size: 38px; }
+    .worldwide .col { width: 25%; }
+    .leadership_about.leadership .inner { padding: 0px 40px; }
+    .leadership_about.leadership .col { height: 530px; }
+    #our_approach_slider .colin { height: 500px; }
+    .popup .inner { width: 1000px; height: 550px; }
 
 }
 @media only screen and (max-width:1279px){
@@ -177,7 +208,24 @@
     .notable_projects .wrapper { max-width: calc(100% - 20px); margin-left:20px; padding: 0; }
     .notable_projects .owl-nav .owl-prev { margin-left: -20px; }
     .notable_projects .colin { width: 900px; height: 450px; }
-
+    /* about page */
+    .legacy_leadership { padding: 70px 0 32px; }
+    .legacy_man .right_col img+p { font-size: 16px; line-height: 24px; margin-bottom: 20px; }
+    .legacy_man .right_col { padding: 35px 40px 30px 30px; }
+    .worldwide h2 { line-height: 40px; margin-bottom: 70px; font-size: 32px; }
+    .worldwide .col h3 { font-size: 22px; line-height: 28px; margin-bottom: 22px; }
+    .worldwide .col ul li { font-size: 14px; line-height: 26px; }
+    .worldwide { padding: 60px 0; }
+    .brand_text_slider .col h3 { font-size: 24px; line-height: 32px; margin-bottom: 15px; }
+    #our_dots li { font-size: 16px; line-height: 22px; padding: 8px 16px 8px 16px; }
+    #our_approach_slider .owl-nav button.owl-prev { margin-left: -20px; }
+    #our_approach_slider .owl-nav button.owl-next { margin-right: -20px; }
+    #our_approach_slider .col { padding: 40px; width: 480px; }
+    .our_approach { padding: 24px 0 40px; }
+    .leadership_about.leadership { padding: 60px 0 40px; }
+    .leadership_about.leadership .inner { padding: 0px 20px; }
+    .leadership_about.leadership .col { height: 400px; }
+    .inner_banner.about_banner .col { left: 20px; }
 
 }
 .banner .tab_contants li:first-child,
@@ -275,7 +323,31 @@
     .popup .inner { width: calc(100% - 40px); height: 420px; }
     .notable_projects .colin { width: 700px; height: 420px; }
 
-
+    /* about page */
+    .legacy_leadership .left_col { width: 100%; padding-right: 0; }
+    .legacy_leadership .right_col { width: 100%; margin-top: 25px; }
+    .legacy_man .left_col { width: 100%; }
+    .legacy_man .left_col img{ width: 100%; }
+    .legacy_man .right_col{width: 100%;}
+    .worldwide .col { width: 50%;margin-bottom: 20px;}
+    .brand_text_slider .col { text-align: center; }
+    .brand_text_slider .col .quata { margin: 0 auto; margin-bottom: 25px; }
+    .brand_text_slider .col .logo{margin: 0 auto;}
+    #our_dots{display: none;}
+    .leadership_about.leadership .col { width: calc(50% - 18px); height: 600px; }
+    #our_approach_slider .colin { height: auto; margin-bottom: 16px;}
+    #our_approach_slider .bg { position: relative; padding: 20px 0 184px;display: none; }
+    #our_approach_slider .bg img { width: 100%; height: 100%; position: absolute; top: 0; left: 0; }
+    #our_approach_slider .colin h3{cursor: pointer;color: #0E2961;font-size: 18px;line-height: 24px;letter-spacing: -0.16px;font-weight: 500;padding:8px 16px 8px 24px;position: relative;width: 100%;display: block;margin-bottom: 16px;}
+    #our_approach_slider .colin h3::after { content: ''; position: absolute; left: 0; top: 0; width: 1px; background-color: #0E2961; height: 100%; transition: 0.3s ease all; }
+    #our_approach_slider .colin h3.active::after {width: 4px;background-color: var(--blue);}
+    #our_approach_slider .colin h3.active{color: var(--blue);}
+    #our_approach_slider .col { padding: 24px; width: calc(100% - 32px); left: 16px; position: relative; top: 0; opacity: 0;transition: 0.4s ease all;}
+    #our_approach_slider .col h4 { font-size: 24px; line-height: 32px; margin-bottom: 8px; }
+    #our_approach_slider .colin h3 span{position: absolute;height:2px;width: 16px;background-color:#0E2961;top:0;bottom: 0;margin: auto;display: block;right: 0;transition: 0.4s ease all;}
+    #our_approach_slider .colin h3 span:last-child{transform: rotate(90deg);}
+    #our_approach_slider .colin h3.active span:last-child{transform: rotate(0);}
+    #our_approach_slider h3.active+.bg .col {opacity: 1;}
 
 
 }
