@@ -560,14 +560,16 @@
     .key_activities_four.key_activities .col { height: 376px; width: 100%; }
 
 
-
-
-
-
-
-
-
-
+    /* about page */
+    .inner_banner.about_banner .col { padding: 24px; text-align: center;}
+    .inner_banner.about_banner .col h1 { font-size: 24px; line-height: 32px; margin-bottom: 16px; }
+    .inner_banner.about_banner .col p { font-size: 14px; line-height: 20px; }
+    .legacy_leadership h2 { font-size: 32px; line-height: 32px; margin-bottom: 48px; }
+    .legacy_leadership { padding: 48px 0 72px; }
+    .legacy_leadership .inner { padding: 24px 24px 0; }
+    .legacy_leadership .left_col p:not(:last-child) { margin-bottom: 24px; }
+    .legacy_leadership .right_col { width: calc(100% + 48px); margin-top: 25px; margin-left: -24px; min-width: calc(100% + 48px);height: 206px;}
+    .legacy_leadership .elco_legacy { bottom: 8px; left: 8px; }
 
 
 
