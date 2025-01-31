@@ -386,16 +386,34 @@ if(jQuery('#our_approach_slider').length > 0){
         }
 
     });
-
-
-
-
-
   }
 }
 // our_approach_slider end
 
+// financial_reports strat
+jQuery('.financial_reports .tab_link li:first-child').addClass('active');
+jQuery('.financial_reports .tab_contants .inner:first-child').addClass('active');
+jQuery('.financial_reports .tab_link li').click(function(){
+  var _this = jQuery(this).attr('data')
 
+  jQuery('.financial_reports .tab_link li').removeClass('active');
+  jQuery(this).addClass('active');
+  
+  jQuery('.financial_reports .tab_contants .inner').removeClass('active');
+  jQuery('.financial_reports .tab_contants #'+_this).addClass('active');
+
+
+
+});
+// financial_reports end
+
+jQuery("#checkbox").on("change", function () {
+  if (jQuery(this).is(":checked")) {
+    jQuery(".checkbox").addClass("checked");
+  } else {
+    jQuery(".checkbox").removeClass("checked");
+  }
+});
 });
 
 $(window).resize(function(){

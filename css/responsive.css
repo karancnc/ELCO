@@ -12,6 +12,8 @@
     .leadership_about.leadership .inner { padding: 0px 80px; }
     .leadership_about.leadership .col { height: 600px; }
   
+    /* blog */
+    .blog-details-top .blog-top-part .text{left: 150px;}
 
 
 }
@@ -78,8 +80,23 @@
     .our_approach { padding: 24px 0 100px; }
     .leadership_about.leadership .col:nth-child(3n) {margin-right: 24px; }
 
+    /* investors */
+    .inner_banner.investors_banner .col { left:80px; }
+    .letter_shareholders .inner { padding: 100px; }
+    .letter_shareholders .inner>div { width: 45%; }
+    .elco_graph_sec .wrapper{max-width: calc(100% - 160px);}
+
+    /* blog */
+    .blog-top-part .text{padding: 30px 30px 30px 30px;} 
+    .blog-top-part .text h2{font-size: 34px; line-height: 40px; padding: 0 0 15px 0; }
+    .blog-top-part .text p{line-height: 26px; }
 
 }
+@media only screen and (max-width:1499px){
+    .blog-top-section h1{padding: 0 0 40px 0;}
+    .terms-section h1{padding: 0 0 21px 0;}
+}
+
 @media only screen and (max-width:1399px){
     p{font-size: 16px;line-height: 1.5;}
     h2, .h2 { font-size: 40px; }
@@ -144,6 +161,24 @@
     .leadership_about.leadership .col { height: 530px; }
     #our_approach_slider .colin { height: 500px; }
     .popup .inner { width: 1000px; height: 550px; }
+
+     /* investors */
+     .letter_shareholders .inner { padding: 100px 60px; }
+     .holding_overview .inner { padding: 0px 40px; }
+     .financial_reports .wrapper { padding: 0 80px; }
+     .core_benefits_investors.core_benefits { padding: 100px 0 150px; }
+     .core_benefits_investors.core_benefits h2 { margin-bottom: 60px; }
+
+    /* blog */
+    .blog-top-part .text h2{font-size: 30px; line-height: 36px; padding: 0 0 10px 0;}
+    .blog-top-part .image{height: 510px;}
+    .blog-details-section figure{margin: 0 0 48px 0px;}
+    .blog-details-section img{max-width: 100%;}
+    .blog-details-top .blog-top-part .text{left: 50px;}
+    .blog-details-section video{height: 480px;}
+    .terms-part{padding: 60px 100px 80px 100px; }
+
+
 
 }
 @media only screen and (max-width:1279px){
@@ -226,6 +261,36 @@
     .leadership_about.leadership .inner { padding: 0px 20px; }
     .leadership_about.leadership .col { height: 400px; }
     .inner_banner.about_banner .col { left: 20px; }
+
+    /* investors */
+    .inner_banner.investors_banner .col h1 { font-size: 32px; line-height: 42px; margin-bottom: 16px; }
+    .inner_banner.investors_banner .col h4 { font-size: 14px; line-height: 22px; margin-bottom: 12px; }
+    .inner_banner.investors_banner .col p { font-size: 16px; line-height: 28px; }
+    .letter_shareholders { padding: 80px 0; }
+    .elco_graph_sec .wrapper { max-width: calc(100% - 40px); }
+    .graph_blog h3 { font-size: 18px; line-height: 24px; line-height: 24px; margin-bottom: 50px}
+    .holding_overview .inner { padding:0; }
+    .holding_overview { padding: 32px 0 50px; }
+    .financial_reports { padding: 80px 0; }
+    .financial_reports .wrapper { padding: 0 20px; }
+    .elco_graph_sec .wrapper { margin-top: -326px; }
+    .the_numbers_investors { padding: 80px 0 360px; }
+    .core_benefits .col h3 { font-size: 16px; line-height: 22px; margin-bottom: 10px; }
+    .inner_banner.investors_banner .col { left: 20px; }
+    .elco_blogs_investors>h4 { margin-bottom:60px; }
+
+    /* blog */
+    .blog-top-section{padding: 110px 0 0 0;}
+    .blog-top-section h1{padding: 0 0 30px 0; font-size: 36px; line-height: 44px; }
+    .blog-top-part .text{padding: 20px;}
+    .blog-list ul li .box .text h2{padding: 0 0 40px 0;}
+    .blog-list{padding: 33px 0 70px 0; }
+    .blog-details-top{padding: 56px 0 0 0;}
+    .terms-section{padding: 110px 0 110px 0;}
+    .terms-section h1{padding: 0 0 20px 0;}
+    .terms-part{padding: 60px 50px 60px 50px; }
+
+
 
 }
 .banner .tab_contants li:first-child,
@@ -349,9 +414,50 @@
     #our_approach_slider .colin h3.active span:last-child{transform: rotate(0);}
     #our_approach_slider h3.active+.bg .col {opacity: 1;}
 
+     /* investors */
+     .letter_shareholders .inner { padding: 60px 40px; }
+     .letter_shareholders .inner>div { width: 100%; }
+     .graph_blog .wrap .col{}
+     .graph_blog h4 { font-size: 16px; line-height: 24px; }
+    .graph_blog h5 { font-size: 50px; line-height: 56px; }
+    .graph_blog .img { height: 220px; margin-top: 13px; }
+
+    .holding_overview .col { width: calc(50% - 4px); }    
+    .holding_overview .col:nth-child(3n) { margin-right: 8px; }
+    .holding_overview .col:nth-child(2n) { margin-right: 0; }
+    .elco_graph_sec { padding: 0 0 40px; }
+    .financial_reports { padding: 40px 0; }
+    .financial_reports .tab_contants .col { width: calc(33.33% - 12px); height: 200px; }
+    .financial_reports .tab_contants .col:nth-child(4n) { margin-right: 16px; }
+    .financial_reports .tab_contants .col:nth-child(3n) { margin-right: 0; }
+    .core_benefits_investors.core_benefits .col { width: 33.33%; padding-right: 16px;margin-bottom: 25px; }
+    .elco_blogs_investors>h4 { margin-bottom:40px; }
+
+    /* blog */
+    .blog-top-section h1{font-size: 24px; line-height: 32px; padding: 0 0 24px 0; }
+    .blog-top-section{padding: 104px 0 0 0;}
+    .blog-top-part .text h2{font-size: 24px; line-height: 32px; padding: 0 0 16px 0;}
+    .blog-top-part .text{padding: 16px 24px; position: static; max-width: 100%; background-color: #e8e8e9; }
+    .blog-top-part .text p{display: none;}
+    .blog-list{padding: 48px 0 128px 0;}
+    .blog-list ul li{flex: 0 0 50%; max-width: 50%; }
+    .blog-top-part .image{height: 352px;}
+    .blog-details-section{padding: 48px 0 176px 0;}
+    .blog-details-top .blog-top-part .text{background-color: #ffffff;}
+    .blog-details-top{padding: 56px 0 0 0;}
+    .terms-part{padding: 24px;}
+    .terms-part h2{padding: 0 0 20px 0;}
+    .terms-part p{line-height: 24px; padding: 0 0 20px 0; }
+    .terms-part ul li{line-height: 24px;}
+    .terms-part ul li::before{top: 12px;}
+    .terms-part ul{padding: 0 0 20px 3px;}
+    .terms-section{padding: 104px 0 136px 0;}
+    .terms-section h1{padding: 0 0 16px 0;}
+
 
 }
 .banner .tab_contants li .bg{display: none;}
+.letter_shareholders .img img.mob{display: none;}
 @media only screen and (max-width:767px){
     h1, .h1 { font-size: 32px; }
     h2, .h2 { font-size: 24px; line-height: 32px; }
@@ -570,13 +676,98 @@
     .legacy_leadership .left_col p:not(:last-child) { margin-bottom: 24px; }
     .legacy_leadership .right_col { width: calc(100% + 48px); margin-top: 25px; margin-left: -24px; min-width: calc(100% + 48px);height: 206px;}
     .legacy_leadership .elco_legacy { bottom: 8px; left: 8px; }
+    .legacy_man { padding: 16px 0; }
+    .legacy_man .right_col { padding: 40px 24px 48px; }
+    .legacy_man .right_col p:last-child{font-size: 12px;}
+    .worldwide { padding:40px 40px 72px; }
+    .worldwide .wrapper{padding: 0;}
+    .worldwide h2 { line-height: 32px; margin-bottom: 56px; font-size: 24px; }
+    .worldwide .col { width: 100%; margin-bottom: 8px; }
+    .worldwide .col ul li { font-size: 14px; line-height: 32px; margin-bottom: 0; }
+    .worldwide .col h3{margin-bottom: 8px;line-height: 38px;}
+    .brand_text_slider { padding: 39px 0px 64px; }
+    .brand_text_slider .col{padding: 0px 40px;}
+    .brand_text_slider .owl-nav button { width: 32px; height: 32px; }
+    .brand_text_slider .owl-nav button img{width: 15px;}
+    .brand_text_slider .owl-nav button.owl-prev { margin-left:0; }
+    .brand_text_slider .owl-nav button.owl-next{margin-right: 0;}
+    .our_approach .wrapper{padding: 0 24px;}
+    .leadership_about.leadership { padding: 48px 24px 100px; }
+    .leadership_about.leadership .inner { padding: 0; }
+    .leadership_about.leadership .col { width: 100%; height: 444px; margin-right: 0 !important; }
 
+    /* investor page */
+    .inner_banner.investors_banner .col { padding: 24px 16px; }
+    .inner_banner.investors_banner .col h4 { font-size: 16px; line-height: 32px; margin-bottom: 16px; text-align: center; }
+    .inner_banner.investors_banner .col h1 { font-size: 24px; line-height: 32px; margin-bottom: 16px; text-align: center; }
+    .inner_banner.investors_banner .col p { font-size: 14px; line-height: 20px; text-align: center; }
+    .letter_shareholders h2 { font-size: 24px; line-height: 32px; margin-bottom: 16px; max-width: 200px; }
+    .letter_shareholders { padding: 48px 0 24px; }
+    .letter_shareholders .inner { padding: 24px; }
+    .letter_shareholders h3, .letter_shareholders p, .letter_shareholders ul li { font-size: 16px; line-height: 24px; }
+    .letter_shareholders ul li strong{font-weight: 400;}
+    .letter_shareholders p>strong { color: var(--ebony); }
+    .letter_shareholders p{margin-bottom: 20px;}
+    .letter_shareholders .img img{display: none;}
+    .letter_shareholders .img img.mob{display: block;}
+    .the_numbers_investors { padding: 40px 24px; }
+    .the_numbers_investors .wrapper{ padding:0; }
+    .the_numbers_investors h2 { margin-bottom: 39px; }
+    .the_numbers_investors .wrap .col { width: 100%; padding: 8px; margin-bottom: 29px;    display: flex ; align-items: flex-end;}
+    .the_numbers_investors .wrap h3 { line-height: 40px; font-size: 36px;         display: flex ; align-items: flex-end; }
+    .the_numbers_investors .wrap h4 { font-size: 16px; }
+    .the_numbers_investors .wrap h4 { margin-bottom: -6px;padding-left: 8px; }
+    .the_numbers_investors .wrap h3 em{margin-left: 5px;        white-space: nowrap; }
 
-
-
-
-
-
+    .elco_graph_sec .wrapper { max-width: 100%; margin-top: 0;padding: 0px;}
+    .graph_blog { padding: 56px 32px 30px; margin-bottom: 0px;border: none; }
+    .graph_blog h2 { font-size: 24px; line-height: 32px; margin-bottom: 32px; }
+    .graph_blog h3 { font-size: 20px; line-height: 24px; line-height: 24px; margin-bottom: 56px; }
+    .graph_blog .wrap .col { width: 100%; padding-bottom: 16px;border-bottom: 1px solid #D9D9D9;margin-bottom: 32px;}
+    .graph_blog .wrap .col:last-child{margin-bottom: 0;border: none;padding-bottom: 0;}
+    .graph_blog .img { height:auto; margin-top: 13px; }
+    .graph_blog h4{margin-bottom: 11px;font-weight: 500;}
+    .graph_blog h4 br{display: none;}
+    .graph_blog h5 em { margin: 0px 13px; }
+    .holding_overview { padding: 24px 0 48px; }
+    .holding_overview .inner{padding: 0px 24px;}
+    .holding_overview .col { padding: 30px 8px 20px; width: 100%; height: auto;margin-right: 0 !important;}
+    .holding_overview .col .traded{max-width: 100%;}
+    .holding_overview .col .public { font-size: 14px; font-family: var(--HelveticaNowVar); padding-left: 16px;}
+    .holding_overview .col .img { margin-bottom: 32px; min-height: 50px; padding-left: 16px;}
+    .holding_overview .col .link{bottom: 8px;   right: 8px;}
+    .holding_overview .col .link img { transform: translateX(0); filter: brightness(0) saturate(100%) invert(7%) sepia(35%) saturate(2315%) hue-rotate(196deg) brightness(95%) contrast(95%);}
+    .holding_overview .col:hover .link img {filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(2%) hue-rotate(9deg) brightness(102%) contrast(101%);}
+    .holding_overview .col .traded{padding-left: 16px;}
+    .financial_reports { padding: 24px 32px 32px; }
+    .financial_reports .wrapper { padding:0; }
+    .financial_reports .tab_link li { min-width: 50%; width: 50%; padding: 8px 8px 8px 24px; line-height: 24px; }
+    .financial_reports .tab_contants .col { width: 100%; height: auto;background-color: #F4F4F4; margin-right: 0 !important;        padding: 16px;}
+    .financial_reports .tab_contants .col h3 { font-size: 28px; line-height: 24px; margin-bottom: 14px; }
+    .financial_reports .tab_contants .col .link { bottom: auto; top: 8px; }
+    .financial_reports .tab_contants .col .link img { transform: translateX(0);filter: brightness(0) saturate(100%) invert(24%) sepia(97%) saturate(2113%) hue-rotate(213deg) brightness(87%) contrast(85%); }
+    .financial_reports .tab_contants .col:hover .link img {filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(0%) hue-rotate(177deg) brightness(104%) contrast(100%);}
+    .financial_reports .tab_contants .col:last-child{margin-bottom: 0px;}
+    .core_benefits_investors.core_benefits { padding: 48px 24px 64px; }
+    .core_benefits_investors.core_benefits .bg{background-image: url(../images/core_benefits_investors_bg_mob.jpg) !important;}
+    .core_benefits_investors.core_benefits .col { width: 100%; padding-right: 0; margin-bottom: 24px; display: flex ; flex-wrap: wrap; align-items: center; }
+    .core_benefits_investors.core_benefits .col h3 { font-size: 18px; line-height: 24px; margin-bottom: 0;width: calc(100% - 56px);padding-left: 8px;}
+    .core_benefits_investors.core_benefits .col img { margin-bottom: 0; }
+    .core_benefits_investors.core_benefits .col p {line-height: 24px; margin-top: 8px; max-width: 100%;}
+    .core_benefits_investors.core_benefits .col:last-child{margin-bottom: 0;}
+    .elco_blogs_investors.elco_blogs{padding: 0 0 46px;}
+    .elco_blogs_investors>h4{display: none;}
+    .elco_blogs_investors.elco_blogs .col { margin-bottom: 88px; }
+    .financial_reports h2 { font-size: 24px; line-height: 32px; margin-bottom: 31px; }
+    
+    /* blog */
+    .blog-list ul li{flex: 0 0 100%; max-width: 100%; }
+    .blog-list ul li .box .blog-info .view-link{display: none;}
+    .blog-details-bottom-part{flex-flow: column; align-items: flex-start; }
+    .blog-details-bottom-part .btn + .btn{margin-top: 24px; }
+    .blog-details-section video{height: 175px;}
+    .blog-details-section figure{line-height: 24px;}
+    .blog-details-bottom-part .btn.btn-bg-blue { padding: 8px 8px; }
 
 }
 
