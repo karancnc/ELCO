@@ -290,6 +290,10 @@
     .terms-section h1{padding: 0 0 20px 0;}
     .terms-part{padding: 60px 50px 60px 50px; }
 
+    /* contact page  */
+    .contact_page { min-height: auto; }
+    .contact_page .wrapper { max-width: 1232px; padding: 180px 20px 150px; }
+
 
 
 }
@@ -768,6 +772,20 @@
     .blog-details-section video{height: 175px;}
     .blog-details-section figure{line-height: 24px;}
     .blog-details-bottom-part .btn.btn-bg-blue { padding: 8px 8px; }
+
+    /* contact page */
+    .contact_page .bg{height: 100vh;position: relative;}
+    .contact_page .wrapper { padding:0; position: initial; }
+    .contact_page .top_contact { padding: 24px 16px; margin-bottom: 8px; position: absolute; top: 36vh; bottom: auto; height: fit-content; margin: auto; width: calc(100% - 40px); left: 0; right: 0; background-color: rgba(14, 41, 97, 0.5); backdrop-filter: blur(10px);text-align: center;}
+    .contact_page .top_contact h1 { font-size: 24px; line-height: 32px; }
+    .contact_page .top_contact p { font-size: 14px; }
+    .contact_page .bottom_contact .sub{width: 100%;border-radius: 4px;}
+    .contact_page .thankyou_col { padding: 20px 0; }
+
+
+
+    
+
 
 }
 

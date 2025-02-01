@@ -176,6 +176,26 @@ header.fixed .brand .white_logo{opacity:0;}
 header.fixed .brand .blue_logo{opacity: 1;}
 header.fixed .inner>ul>li>a::after{background-color: rgba(32, 89, 206, 1);}
 
+
+body.single header,
+body.page-template-default header{padding:4px 40px;background-color: rgba(255, 255, 255, 0.8); backdrop-filter: blur(10px);}
+body.single header::after,
+body.page-template-default header::after{content: '';position: absolute;left: 0;right: 0;margin: auto;bottom: 0;height: 1px;width:calc(100% - 80px);background-color: rgba(176, 190, 197, 1);}
+body.single header .inner>ul>li>a,
+body.page-template-default header .inner>ul>li>a{color:var(--ebony);font-weight: 500; font-family: var(--body-font);}
+body.single header .inner>ul>li:hover>a,
+body.page-template-default header .inner>ul>li:hover>a{color: rgba(32, 89, 206, 1);}
+body.single header .brand,
+body.page-template-default header .brand { top: 13px; }
+body.single header .brand .white_logo,
+body.page-template-default header .brand .white_logo{opacity:0;}
+body.single header .brand .blue_logo,
+body.page-template-default header .brand .blue_logo{opacity: 1;}
+body.single header .inner>ul>li>a::after,
+body.page-template-default header .inner>ul>li>a::after{background-color: rgba(32, 89, 206, 1);}
+
+
+
 /* mega menu */
 .dropmenu_image_link{width: 1082px;background-color: rgba(14, 41, 97, 1);padding:8px 8px 8px 29px;position: absolute;top:52px;left: 0;display: flex;justify-content: space-between;flex-wrap: wrap;opacity: 0;pointer-events: none;transition: 0.5s ease all;}
 header .inner>ul>li:hover .dropmenu_image_link{opacity: 1;pointer-events: all;}
@@ -700,11 +720,16 @@ footer .michal li,footer .michal a,footer .michal p{font-size: 16px;font-weight:
 .contact_page .address li p,
 .contact_page .address li a{color: var(--ebony);font-size: 16px;line-height: 22px;}
 .contact_page .address li img { position: absolute; left: 12px; top: 7px; }
-.contact_page .checkbox{position: relative;display: block;margin: 24px 0;padding-left: 48px;background-image: url(../images/no.png);background-repeat: no-repeat;background-position: left center;color: #0E2961;font-size: 16px;line-height: 32px;font-weight: 500;}
+.contact_page .checkbox{position: relative;display: block;margin: 24px 0;padding-left: 48px;background-image: url(../images/no.png);background-repeat: no-repeat;background-position: left center;color: #0E2961;font-size: 16px;line-height: 32px;font-weight: 500;height: 32px; display: flex ; align-items: center;}
 .contact_page .checkbox a{color: #599AFF;font-size: 16px;line-height:24px;font-weight: 400;text-decoration: underline;}
 .contact_page .checkbox input[type="checkbox"]{position: absolute;opacity: 0;}
-.contact_page .checkbox.checked {background-image: url(../images/yes.png);}
+.contact_page .checkbox.checked {background-image: url(../images/yes.png) !important;}
+.contact_page .thankyou_col{padding: 96px 0 72px;text-align: center;display: none;}
+.contact_page .thankyou_col img{display: block;margin: 0 auto;}
+.contact_page .thankyou_col h2{margin-top: 10px;font-size: 40px;line-height: 48px;font-family: var(--sangBleu-kingdom);color: var(--ebony);margin-bottom: 24px;}
 
+.contact_page .bottom_contact.thankyou form{display: none;}
+.contact_page .bottom_contact.thankyou .thankyou_col{display: block;}
 
 
 
@@ -811,3 +836,10 @@ white-space: nowrap; }
 .terms-part ul li{font-size: 16px; line-height: 30px; color: var(--ebony); font-weight: 400; font-family: var(--body-font); padding: 0 0 0 10px; margin: 0; position: relative;}
 .terms-part ul li::before{width: 5px; height: 1px; background-color: var(--ebony); content: ""; position: absolute; left: 0; top: 14px; }
 .terms-part ul li ul{padding: 0;}
+
+#full_wrapper { width: 100%; height: 100% !important; }
+.recent_news .owl-nav button.owl-next { margin-right: -11vw; }
+.recent_news .owl-nav button.owl-prev { margin-left: -11vw; }
+
+.animate{transition: 0.5s cubic-bezier(0.82, 0.03, 0.16, 0.97) all;transform: translateY(100px);opacity: 0;transition-delay: 0.2s;}
+.animate.come-in{transform: translateY(0);opacity: 1;}
