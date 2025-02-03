@@ -6,24 +6,34 @@ $(window).load(function(){
     });
 });
 
-jQuery( '.foundation_futures .inner a,.dropmenu_gallery_link li a' ).on( 'click', function(){
-  var href = jQuery(this).prop("hash").substr(1);
-  
-  jQuery( 'html, body' ).animate({
-    scrollTop: jQuery('.'+href).offset().top - 50
-  },1000);
+
+jQuery('.foundation_futures .inner a, .dropmenu_gallery_link li a').on('click', function (e) {
+  e.preventDefault(); // Prevent default anchor behavior
+
+  var hash = jQuery(this).prop("hash").substr(1);
+  scrollbar.scrollTo(0, jQuery('.'+hash).attr('data-scroll'), 600);
+    // console.log(jQuery('.'+hash).attr('data-scroll'));
+      
 });
 
-jQuery(window).load(function(){
-  var _has =  window.location.hash.slice(1);
-  if(_has){
-    jQuery( 'html, body' ).animate({
-      scrollTop: jQuery('.'+_has).offset().top - 50
-    },1000);        
+jQuery(window).on("load", function () {
+  jQuery('.portfolio_sec .wrap').each(function(){
+    var targetOffset = jQuery(this).offset().top;
+    var wrapperOffset = jQuery('#full_wrapper').offset().top;
+    var scrollToPosition = targetOffset - wrapperOffset - 50;
+    jQuery(this).attr('data-scroll',scrollToPosition);
+  });
+  var hash = window.location.hash.slice(1);
+  if (hash) {
+    var targetElement = jQuery('.' + hash);
+    if (targetElement.length) {
+      var targetOffset = targetElement.offset().top;
+      var wrapperOffset = jQuery('#full_wrapper').offset().top;
+      var scrollToPosition = targetOffset - wrapperOffset - 50;
+      scrollbar.scrollTo(0, scrollToPosition, 500);
+    }
   }
 });
-
-
 
 
 // jQuery(window).scroll(function(){
